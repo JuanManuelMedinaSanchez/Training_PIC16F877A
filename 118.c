@@ -1,28 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    unsigned int flags = 0; // Initialize flags variable with all bits set to 0
+    unsigned int flags = 0b00000000; // Initialize flags variable with all bits set to 0
 
-    // Set bit at position 2 (0-based index)
-    flags |= (1 << 2);
+    // Set bits at positions 2 and 4 (0-based index) using binary representations
+    unsigned int bitMask = 0b00000100 | 0b00010000; // Binary: 00000100 | 00010000
+    flags |= bitMask;
 
-    // Check if bit at position 2 is set
-    if ((flags & (1 << 2)) != 0) {
-        printf("Bit at position 2 is set.\n");
-    } else {
-        printf("Bit at position 2 is not set.\n");
-    }
-
-    // Clear bit at position 2
-    flags &= ~(1 << 2);
-
-    // Check again if bit at position 2 is set
-    if ((flags & (1 << 2)) != 0) {
-        printf("Bit at position 2 is set.\n");
-    } else {
-        printf("Bit at position 2 is not set.\n");
-    }
+    // Output the updated value of 'flags' in binary format
+    printf("Updated flags: %08b\n", flags);
 
     return 0;
 }
-
