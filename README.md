@@ -1,6 +1,6 @@
 # MCU_INCEL
 
-- Codes examples:
+- Codes examples (Introduction to C for MCUs):
 
 - 1.1 -> Hello World.  
 - 1.2 -> Data types.
