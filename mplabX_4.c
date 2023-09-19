@@ -1,4 +1,5 @@
 #pragma config FWDTEN = OFF // Compiler directive WDT=OFF stops PIC24 from automatic resets
+#include <xc.h>              // Standard I/O - required for printf() function
 #include <stdio.h>              // Standard I/O - required for printf() function
 
 #define CONSTANT1 50
