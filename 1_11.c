@@ -2,7 +2,7 @@
 
 int main() {
     
-    unsigned char value = 0b1111;  // Binary: 1100
+    unsigned char value = 0b0000;  // Binary: 1100
 
     printf("Original Value: %08b\n", value);
 
