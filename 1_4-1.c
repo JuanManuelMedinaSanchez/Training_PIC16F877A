@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int x = 7;
-
 int main() {
-    int isEqual;
+    int x = 1;
+    x += 1; 
+    x = ++x;
+    printf("now %d\n", x);
 
-    isEqual = ++x;
-    printf("now %d\n", isEqual);
+    x = ++x;
+    printf("now %d\n", x);
 
-    isEqual = ++x;
-    printf("now %d\n", isEqual);
-
-    isEqual = ++x;
-    printf("now %d\n", isEqual);
+    x = ++x;
+    printf("now %d\n", x);
 
     return 0;
 }
