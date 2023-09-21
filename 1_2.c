@@ -22,10 +22,12 @@ int main() {
     unsigned long unsignedLongVariable = 4294967295;
     long long longLongVariable = 9223372036854775807;
     unsigned long long unsignedLongLongVariable = 18446744073709551615;
+  
 
     // Character Data Types
     char characterVariable = 'A';
     unsigned char unsignedCharVariable = 128;
+    char miCadena[20] = "MUCs!"; 
 
     // Floating-Point Data Types
     float floatVariable = 3.14159;
@@ -55,6 +57,7 @@ int main() {
 
     printf("Character: %c\n", characterVariable);
     printf("Unsigned Character: %u\n", unsignedCharVariable);
+    printf("Salida: %s\n", miCadena);
 
     printf("Float: %f\n", floatVariable);
     printf("Double: %lf\n", doubleVariable);
