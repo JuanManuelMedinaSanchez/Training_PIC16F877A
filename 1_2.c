@@ -1,3 +1,14 @@
+/*Espacio en memoria segun tipo de datos*/
+/*______________________________________________________________________________________
+    printf("Espacio de char en bits: %d\n", CHAR_BIT);
+    printf("Rango de int: %d a %d\n", INT_MIN, INT_MAX);
+    printf("Rango de long: %ld a %ld\n", LONG_MIN, LONG_MAX);
+    printf("Espacio de float en bytes: %lu\n", sizeof(float));
+    printf("Espacio de double en bytes: %lu\n", sizeof(double));
+    printf("Espacio de long double en bytes: %lu\n", sizeof(long double));
+/*______________________________________________________________________________________
+
+
 #include <stdio.h>
 
 int main() {
