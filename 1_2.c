@@ -1,5 +1,6 @@
 /*Espacio en memoria segun tipo de datos*/
 /*______________________________________________________________________________________
+    //--->#include <limits.h> <---//
     printf("Espacio de char en bits: %d\n", CHAR_BIT);
     printf("Rango de int: %d a %d\n", INT_MIN, INT_MAX);
     printf("Rango de long: %ld a %ld\n", LONG_MIN, LONG_MAX);
