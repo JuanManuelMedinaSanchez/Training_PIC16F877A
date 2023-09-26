@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdint.h>
 /* _________________________________________________________________________________________
 uint8_t bit1= 0b0000;
 uint8_t bit2= 0b0010;
@@ -15,8 +16,11 @@ lo que significa que solo puede representar números no negativos, desde 0 hasta
 
 //Operaciones con numeros binarios, inclusion de caracteres tipo uint8_t y relacionados
 int main() {
-	unsigned int bit1= 0b0000;
-	unsigned int bit2= 0b0010;
+/*antes -> int bit1= 0b0000;
+unsigned int bit2= 0b0010;*/
+	//Implementacion de uint8_t
+	uint8_t bit1= 0b0000;
+	uint8_t bit2= 0b0010;
 	unsigned boolOp;
 	boolOp = bit1 & bit2;
 	printf("resultado %04b", boolOp);
