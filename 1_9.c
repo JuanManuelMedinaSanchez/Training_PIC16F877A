@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    unsigned int flags = 0b00000000; // Initialize flags variable with all bits set to 0
+    unsigned int flags = 0b00000000; // Incio de Flag en 0
 
-    // Set bit at position 2 (0-based index) to 1
+    // Posicion 2 (0-based index) a 1
     flags |= 0b00000100;  // Binary: 00000100
 
-    // Output the updated value of 'flags' in binary format
+    // Salida
     printf("Updated flags (after setting bit 2): %08b\n", flags);
 
-    // Clear the same bit at position 2 (set it to 0)
+    // Borrar el bit en la misma posicion
     flags &= 0b11111011;  // Binary: 11111011
 
-    // Output the updated value of 'flags' in binary format
+    // Salida del Flag
     printf("Updated flags (after clearing bit 2): %08b\n", flags);
 
-    // Toggle the same bit at position 2
+    // Toggle
     flags ^= 0b00000100;  // Binary: 00000100
 
-    // Output the updated value of 'flags' in binary format
+    // Actualizacion del valor en sistema binario
     printf("Updated flags (after toggling bit 2): %08b\n", flags);
 
     return 0;
