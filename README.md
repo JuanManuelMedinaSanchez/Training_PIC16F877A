@@ -2,6 +2,7 @@
 
 - Codes examples (Introduction to C for MCUs):
 
+Module 1.
 - 1.1 -> Hello World.  
 - 1.2 -> Data types.
 - 1.3 -> Input / Outputs / Comments.
@@ -16,4 +17,15 @@
 - 1.12 -> Flags.
 - 1.13 -> Conversion Binary/Decimal/Hexa
 - 1.14 -> Float point.
-- 1.15 -> Fixed point
+- 1.15 -> Fixed point.
+
+Module 2.
+
+- 2.1 -> Funciones Condicionales.
+- 2.2 -> Funcion If anidada.
+- 2.3 -> Funcion If anidada.
+- 2.4 -> Funcion Switch.
+- 2.5 -> Operaciones lógicas.
+- 2.6 -> Funcion While.
+- 2.7 -> For Loop.
+  
