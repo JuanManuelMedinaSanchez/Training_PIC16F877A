@@ -26,6 +26,6 @@ Module 2.
 - 2.3 -> Funcion If anidada.
 - 2.4 -> Ciclo For
 - 2.5 -> Funcion While.
-- 2.6 -> 
-- 2.7 -> 
+- 2.6 -> Funcion While 2.
+- 2.7 -> Script mixto (While, for, if, else, switch)
   
