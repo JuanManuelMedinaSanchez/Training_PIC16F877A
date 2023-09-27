@@ -1,8 +1,8 @@
 # MCU_INCEL
 
-- Codes examples (Introduction to C for MCUs):
+- Ejemplos de código (Introduction to C for MCUs):
 
-Module 1.
+Modulo 1.
 - 1.1 -> Hello World.  
 - 1.2 -> Tipos de datos.
 - 1.3 -> I/O / Comments.
@@ -19,7 +19,7 @@ Module 1.
 - 1.14 -> Float point.
 - 1.15 -> Fixed point.
 
-Module 2.
+Modulo 2.
 
 - 2.1 -> Funciones Condicionales.
 - 2.2 -> Funcion If anidada.
