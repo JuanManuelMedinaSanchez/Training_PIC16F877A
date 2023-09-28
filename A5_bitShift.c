@@ -1,4 +1,9 @@
-  #include <xc.h>
+/* 
+ * Desarrollo / Autoria, Juan Manuel Medina, mail to juansth@gmail.com
+ * Processor: PIC16F877A
+ * Compiler:  MPLAB XC8
+ */
+#include <xc.h>
 #include <stdint.h>
 
 #define _XTAL_FREQ 800000
