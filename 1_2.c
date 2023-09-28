@@ -1,4 +1,5 @@
-/*Espacio en memoria segun tipo de datos*/
+/*C script demos
+Scripted by Juan Medina, mail to juansth@gmail.com/*/*Espacio en memoria segun tipo de datos*/
 /*______________________________________________________________________________________
     //--->#include <limits.h> <---//
     printf("Espacio de char en bits: %d\n", CHAR_BIT);
