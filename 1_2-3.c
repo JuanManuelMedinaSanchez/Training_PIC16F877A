@@ -1,3 +1,5 @@
+/*C script demos
+Scripted by Juan Medina, mail to juansth@gmail.com/*
 #include <stdio.h>
 #include <stdbool.h>
 
