@@ -1,3 +1,5 @@
+/*C script demos
+Scripted by Juan Medina, mail to juansth@gmail.com/*
 /*
 ------------------------------------------------------------------------------------------
 Una bandera of flag puede ser un bit o un conjunto de bits que se utilizan para indicar 
