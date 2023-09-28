@@ -1,3 +1,9 @@
+/* 
+ * Desarrollo / Autoria, Juan Manuel Medina, mail to juansth@gmail.com
+ * Processor: PIC16F877A
+ * Compiler:  MPLAB XC8
+ */
+
 //Do while
 #include <stdio.h>
 #include <xc.h>
