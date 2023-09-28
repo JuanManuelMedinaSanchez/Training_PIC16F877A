@@ -1,6 +1,6 @@
 /*C script demos
-Scripted by Juan Medina, mail to juansth@gmail.com/*/*Espacio en memoria segun tipo de datos*/
-/*______________________________________________________________________________________
+Scripted by Juan Medina, mail to juansth@gmail.com/*/*Espacio en memoria segun tipo de datos
+______________________________________________________________________________________
     //--->#include <limits.h> <---//
     printf("Espacio de char en bits: %d\n", CHAR_BIT);
     printf("Rango de int: %d a %d\n", INT_MIN, INT_MAX);
@@ -8,8 +8,7 @@ Scripted by Juan Medina, mail to juansth@gmail.com/*/*Espacio en memoria segun t
     printf("Espacio de float en bytes: %lu\n", sizeof(float));
     printf("Espacio de double en bytes: %lu\n", sizeof(double));
     printf("Espacio de long double en bytes: %lu\n", sizeof(long double));
-/*______________________________________________________________________________________
-
+______________________________________________________________________________________*/
 
 #include <stdio.h>
 
