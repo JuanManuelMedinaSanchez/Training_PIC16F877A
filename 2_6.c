@@ -1,3 +1,8 @@
+/* 
+ * Desarrollo / Autoria, Juan Manuel Medina, mail to juansth@gmail.com
+ * Processor: PIC16F877A
+ * Compiler:  MPLAB XC8
+ */
 //Ciclo While parte 2. 
 #define _XTAL_FREQ 800000
 
