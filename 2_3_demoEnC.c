@@ -7,7 +7,7 @@ void main(void) {
     uint8_t PORTA = 0x00;
     uint8_t trafficState = 0; // Control de estado
 
-    while (1) {
+    while (1) {  //Ciclo de operacion
         switch (trafficState) {
             case 0: // Red
                 PORTA = 0b00000001; // ON RA0 (Semaforo en rojo)
