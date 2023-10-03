@@ -3,8 +3,9 @@
  * Processor: PIC16F877A
  * Compiler:  MPLAB XC8
  */
-#define _XTAL_FREQ 800000
 #include <xc.h>
+#define _XTAL_FREQ 800000
+
 
 void main() {
     TRISA = 0x00;
