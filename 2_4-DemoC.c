@@ -11,15 +11,15 @@ int main(void) {
             if (trafficState == 0) { // Red
                 PORTA = 0b00000001; // ON RA0 (Semaforo en rojo)
                 printf("Semaforo en Rojo\n");
-                usleep(100000); // Espera
+                usleep(1000000); // Espera
             } else if (trafficState == 1) { // Green
                 PORTA = 0b00000010; // ON RA1 (Amarillo)
                 printf("Semaforo en Amarillo\n");
-                usleep(100000); // Espera
+                usleep(1000000); // Espera
             } else if (trafficState == 2) { // Yellow
                 PORTA = 0b00000100; // ON RA2 (Verde)
                 printf("Semaforo en Verde\n");
-                usleep(100000); // Espera
+                usleep(1000000); // Espera
             }
         }
 
