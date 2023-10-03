@@ -35,6 +35,6 @@ void main() {
             default:
                    PORTB = 0b00111111; // Display 0
                 break;
-        }
+        } //Completar por cuenta propia
     }
 }
