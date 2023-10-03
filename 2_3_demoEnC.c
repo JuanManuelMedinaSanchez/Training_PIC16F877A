@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <unistd.h> // Para usleep
 
-int main(void) {
+void main(void) {
     uint8_t TRISA = 0x00;
     uint8_t PORTA = 0x00;
     uint8_t trafficState = 0; // Control de estado
@@ -16,14 +16,14 @@ int main(void) {
                 trafficState = 1; // Cambia al siguiente estado y rompe el switch
                 break;
 
-            case 1: // Green
+            case 1: // Yellow
                 PORTA = 0b00000010; // ON RA1 (Amarillo)
                 printf("Semaforo en amarillo\n");
                 usleep(1000000); // Espera 1 segundo (en microsegundos)
                 trafficState = 2; // Cambia al siguiente estado y rompe el switch
                 break;
 
-            case 2: // Yellow
+            case 2: // Green
                 PORTA = 0b00000100; // ON RA2 (Verde)
                 printf("Semaforo en verde\n");
                 usleep(1000000); // Espera 1 segundo (en microsegundos)
@@ -39,6 +39,5 @@ int main(void) {
                 break;
         }
     }
-
-    return 0; // Indica que el programa se ejecutó sin errores
+//No hay return 0, la funcion principal es de tipo 'void'
 }
