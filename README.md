@@ -36,5 +36,5 @@ Modulo 2.
   Modulo 4.
 
   4.1 -> Interrupciones
-  4.2 -> Interrupciones / Flancos
+  4.2 -> Interrupciones, Flancos
   
