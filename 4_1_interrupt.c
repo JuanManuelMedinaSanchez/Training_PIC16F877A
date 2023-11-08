@@ -20,7 +20,7 @@ void main(void) {
    GIE=1;
    INTE = 1;
     TRISD = 0;
-     PORTD = 0b00000001;
+     PORTD = 0x01;
    
    
     while (1) {
