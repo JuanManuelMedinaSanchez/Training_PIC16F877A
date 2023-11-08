@@ -28,4 +28,13 @@ Modulo 2.
 - 2.5 -> Funcion While.
 - 2.6 -> Funcion While 2.
 - 2.7 -> Script mixto (While, for, if, else, switch)
+
+  Modulo 3
+
+  3 -> Manejo de GPIO.
+
+  Modulo 4.
+
+  4.1 -> Interrupciones
+  4.2 -> Interrupciones / Flancos
   
