@@ -20,8 +20,9 @@ void main(void) {
 
     while (1) {
         if (!pauseFlag) {
+          
             PORTD ^= 0xFF; 
-            __delay_ms(100); // Espera
+            __delay_ms(500); // Espera
         } else {
             // El programa está en pausa, puedes realizar otras acciones si es necesario
         }
