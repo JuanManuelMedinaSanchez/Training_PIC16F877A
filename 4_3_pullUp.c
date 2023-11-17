@@ -13,19 +13,17 @@ void pullUp(void){
     PORTB=0x00;
     PORTD=0x00;
     TRISB=0xFF;
-    /*Turn on Weak Pull Up*/
     OPTION_REG = 0b10000000;
-    /*Port C output*/
     TRISD=0x00;
     while(PORTB){
        PORTD = 1;
     }
 }
 
+
 void main(void){
    
    pullUp();
    
    }
-
 
