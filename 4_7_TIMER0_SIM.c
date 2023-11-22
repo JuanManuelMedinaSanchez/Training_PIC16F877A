@@ -7,7 +7,7 @@ unsigned char count = 0;
 
 void __interrupt() isr(void) {
     if (TMR0IF == 1) {
-    //TIMER0 calculate-> (x10ms)   256-((0.01 * 20000000)/(256*4));
+    //TIMER0 calculate-> (x10ms)    256-((0.01 * 20000000)/(256*4))
         TMR0 = 60;  // Ajusta este valor para lograr el intervalo deseado
         TMR0IF = 0;  // Restablecer la bandera de desbordamiento del temporizador
         count++;     // Incrementar el contador
