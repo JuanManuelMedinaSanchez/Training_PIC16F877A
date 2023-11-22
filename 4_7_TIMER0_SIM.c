@@ -7,11 +7,11 @@ unsigned char count = 0;
 
 void __interrupt() isr(void) {
     if (TMR0IF == 1) {
-        TMR0 = 100;  // Ajusta este valor para lograr el intervalo deseado
+    //TIMER0 calculate-> (x10ms)   256-((0.01 * 20000000)/(256*4));
+        TMR0 = 60;  // Ajusta este valor para lograr el intervalo deseado
         TMR0IF = 0;  // Restablecer la bandera de desbordamiento del temporizador
         count++;     // Incrementar el contador
     }
-    return;
 }
 
 void __init_interrupt__() {
@@ -24,9 +24,9 @@ void __init_interrupt__() {
 void __init_timer__() {
     T0CS = 0;   // Seleccionar el reloj de ciclo de instrucción interno (Fosc/4)
     PSA = 0;    // Asignar el preescalador al Timer0
-    PS2 = 1;    // Configurar el preescalador a 1:xxx PS1, 2 y 3. 
-    PS1 = 0;
-    PS0 = 0;
+    PS2 = 1;    // Configurar el preescalador a 1:XXX PS1, 2 y 3. 
+    PS1 = 1;
+    PS0 = 1;
     T0IF = 0;   // Limpiar la bandera de desbordamiento del Timer0
 }
 
@@ -36,9 +36,10 @@ void main(void) {
     __init_timer__();
 
     while (1) {
-        if (count >= 100) { // Intervalo deseado de 2 segundos (20 * 100 ms)
+        // Se ejecuta indefinidamente
+        if (count >= 1) { // Intervalo deseado de 2 segundos (20 * 100 ms)
             count = 0;
-            PORTD = !PORTD;
+      RD0 = !RD0;
         }
     }
 }
