@@ -1,6 +1,5 @@
 
 #include <xc.h>
-
 #define _XTAL_FREQ  20000000
 #define LED_PIN RD0
 
@@ -25,7 +24,7 @@ void __init_interrupt__() {
 void __init_timer__() {
     T0CS = 0;   // Seleccionar el reloj de ciclo de instrucción interno (Fosc/4)
     PSA = 0;    // Asignar el preescalador al Timer0
-    PS2 = 1;    // Configurar el preescalador a 1:128 PS1, 2 y 3. 
+    PS2 = 1;    // Configurar el preescalador a 1:xxx PS1, 2 y 3. 
     PS1 = 0;
     PS0 = 0;
     T0IF = 0;   // Limpiar la bandera de desbordamiento del Timer0
@@ -37,8 +36,7 @@ void main(void) {
     __init_timer__();
 
     while (1) {
-        // Se ejecuta indefinidamente
-        if (count >= 100) { // Intervalo deseado
+        if (count >= 100) { // Intervalo deseado de 2 segundos (20 * 100 ms)
             count = 0;
             PORTD = !PORTD;
         }
