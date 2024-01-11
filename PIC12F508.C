@@ -1,3 +1,8 @@
+/* 
+******PIC12F508********
+Blink one led demo. 
+*/
+
 #pragma config OSC = IntRC 
 #pragma config WDT = OFF 
 #pragma config CP = OFF 
