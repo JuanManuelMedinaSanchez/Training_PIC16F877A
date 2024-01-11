@@ -12,7 +12,7 @@ Blink one led demo.
  void blinkLED (){
 GP0 = 1;			
   __delay_ms (500);	
-  GP0 = 0;			
+GP0 = 0;			
   __delay_ms (500);		
 } 
  
