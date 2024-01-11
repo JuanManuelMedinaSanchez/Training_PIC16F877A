@@ -9,9 +9,7 @@
 	 GP0 = 1;     // Turn on the LED
        __delay_ms(500);   // Wait for a while (adjust as needed)
 	 GP0 = 0;         // Turn off the LED
-       __delay_ms(500);   // Wait for a while
-      
-     
+       __delay_ms(500);   // Wait for a while  
    }
 
    void main(void) {
