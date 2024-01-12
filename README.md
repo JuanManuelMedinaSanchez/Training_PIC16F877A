@@ -40,7 +40,7 @@ Modulo 2.
 - 4.6 -> TIMER0
 - 4.7 -> TIMER0
 
- Modulo 5.
+   Modulo 5.
  - 5.1 -> Structs Operador punto "."
  - 5.2 -> Structs y Operador Arrow "->"
  - 5.3 -> Structs y Operador Arrow "->"
