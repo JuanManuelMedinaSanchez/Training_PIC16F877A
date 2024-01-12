@@ -34,3 +34,17 @@ Modulo 2.
   Modulo 4.
 - 4.1 -> Interrupciones.
 - 4.2 -> Interrupciones, Flancos.
+- 4.3 -> Resistencias Pull Up.
+- 4.4 -> TIMER0
+- 4.5 -> TIMER0
+- 4.6 -> TIMER0
+- 4.7 -> TIMER0
+
+ Modulo 5.
+ - 5.1 -> Structs Operador punto "."
+ - 5.2 -> Structs y Operador Arrow "->"
+ - 5.3 -> Structs y Operador Arrow "->"
+ - 
+
+
+
