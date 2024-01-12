@@ -1,0 +1,51 @@
+#include <xc.h>
+#include <stdint.h>
+
+// Definición de la estructura para representar la configuración de un pin del MCU
+typedef struct {
+    uint8_t pinNumber;  // Número del pin del MCU
+    uint8_t state;      // Estado del pin (encendido: 1, apagado: 0)
+} PinConfig;
+
+// Configuración específica para el PIC16F877A y MPLAB X IDE con XC8
+#define LED_PIN  RB0     // Asigna el pin del LED al puerto B, pin 0
+
+// Función para inicializar la configuración de un pin
+void initPin(PinConfig *pin) {
+    // Configuración específica para el PIC16F877A
+    TRISB &= ~(1 << pin->pinNumber); // Configura el pin como salida
+    pin->state = 0;
+}
+
+// Función para cambiar el estado del pin a encendido
+void turnOnPin(PinConfig *pin) {
+    // Configuración específica para el PIC16F877A
+    PORTB |= (1 << pin->pinNumber); // Establece el pin en alto (encendido)
+    pin->state = 1;
+}
+
+// Función para cambiar el estado del pin a apagado
+void turnOffPin(PinConfig *pin) {
+    // Configuración específica para el PIC16F877A
+    PORTB &= ~(1 << pin->pinNumber); // Establece el pin en bajo (apagado)
+    pin->state = 0;
+}
+
+int main(void) {
+    // Configuración del pin para un LED
+    PinConfig myLEDPin;
+    myLEDPin.pinNumber = 0; // RB0 en el PIC16F877A
+
+    // Inicializa la configuración del pin
+    initPin(&myLEDPin);
+
+    while (1) {
+        // Tu código principal aquí
+        turnOnPin(&myLEDPin);   // Enciende el LED
+        __delay_ms(1000); // Pausa de 1000 ms (1 segundo)
+        turnOffPin(&myLEDPin);  // Apaga el LED
+        __delay_ms(1000); // Pausa de 1000 ms (1 segundo)
+    }
+
+    return 0;
+}
