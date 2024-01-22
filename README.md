@@ -44,7 +44,8 @@ Modulo 2.
  - 5.1 -> Structs Operador punto "."
  - 5.2 -> Structs y Operador Arrow "->"
  - 5.3 -> Structs y Operador Arrow "->"
- -
+ - 5.4 -> Punteros para MCUs.
+   
    Modulo 6.
  - 6_1 -> UART TX
  - 6_2 -> UART TX MIDI UART EXAMPLE
