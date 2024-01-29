@@ -39,7 +39,7 @@ void main(void) {
 
     while (1) {
         // Se ejecuta indefinidamente
-        if (count >= 100) { // Intervalo deseado de 2 segundos (20 * 100 ms)
+        if (count >= 100) { // Intervalo deseado de 1 segundos (20 * 100 ms)
             count = 0;
             PORTD = !PORTD;
         }
