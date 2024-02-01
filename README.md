@@ -50,5 +50,6 @@ Modulo 2.
  - 6_1 -> UART TX
  - 6_2 -> UART TX MIDI UART EXAMPLE
  - 6_3 -> PWM
+ - 6_4 -> PWM a una frecuencia determinada.
 
  
