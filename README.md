@@ -1,4 +1,4 @@
-# MCU_INCEL PIC16F877A
+# TRAINING PIC16F877A FILES
 
 - Ejemplos de código (Introduction to C for MCUs):
 
