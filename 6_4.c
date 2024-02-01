@@ -1,4 +1,4 @@
-#include <xc.h>
+
 #pragma config FOSC = HS       
 #pragma config WDTE = OFF      
 #pragma config PWRTE = OFF      
@@ -6,7 +6,8 @@
 #pragma config LVP = OFF       
 #pragma config CPD = OFF      
 #pragma config WRT = OFF     
-#pragma config CP = OFF      
+#pragma config CP = OFF     
+#include <xc.h>
 #define _XTAL_FREQ 16000000
 #define PRESCALAR 16
 
