@@ -1,4 +1,3 @@
-
 #pragma config FOSC = HS       
 #pragma config WDTE = OFF      
 #pragma config PWRTE = OFF      
@@ -6,7 +5,7 @@
 #pragma config LVP = OFF       
 #pragma config CPD = OFF      
 #pragma config WRT = OFF     
-#pragma config CP = OFF     
+#pragma config CP = OFF      
 #include <xc.h>
 #define _XTAL_FREQ 16000000
 #define PRESCALAR 16
@@ -40,7 +39,6 @@ void __set_duty_cycle(int duty_cycle) {
 void main(void) {
     __set_pwm_freq(1000); // Configura la frecuencia a 1KHz
     __init_pwm();
-    __set_duty_cycle(0);
     
     // Continuamente incrementa y disminuye el brillo del LED
     while(1) {
