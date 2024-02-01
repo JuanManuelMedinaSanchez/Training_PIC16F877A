@@ -14,6 +14,14 @@ float PWM_FREQ;
 float PWM_PERIOD;
 int counter;
 
+
+ PWM_Disable(){
+	TRISCbits.TRISC2 = 0; // Set RC2 as output
+    T2CONbits.TMR2ON = 0; // Set timer 2 on
+    CCP1CONbits.CCP1M = 0; // Set PWM mode of operation
+ };
+
+
 void __set_pwm_freq(int f) {
     PWM_FREQ = f;
     PWM_PERIOD = 1.0 / PWM_FREQ; // Utiliza 1.0 para indicar que es un número de punto flotante
@@ -38,10 +46,17 @@ void __set_duty_cycle(int duty_cycle) {
 
 void main(void) {
     __set_pwm_freq(1000); // Configura la frecuencia a 1KHz
-    __init_pwm();
+
+        __set_duty_cycle(50);
+
+   
     
     // Continuamente incrementa y disminuye el brillo del LED
     while(1) {
-        __set_duty_cycle(50);
-    }
+       __init_pwm();
+          __delay_ms(1000);
+        PWM_Disable();
+            __delay_ms(1000);
 }
+}
+
