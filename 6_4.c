@@ -1,3 +1,4 @@
+#include <xc.h>
 #pragma config FOSC = HS       
 #pragma config WDTE = OFF      
 #pragma config PWRTE = OFF      
@@ -6,7 +7,6 @@
 #pragma config CPD = OFF      
 #pragma config WRT = OFF     
 #pragma config CP = OFF      
-#include <xc.h>
 #define _XTAL_FREQ 16000000
 #define PRESCALAR 16
 
@@ -33,10 +33,8 @@ void __set_duty_cycle(int duty_cycle) {
     float dc_period = dc * PWM_PERIOD; 
     int reg_value = (int)((dc_period * _XTAL_FREQ) / PRESCALAR);
     CCPR1L = reg_value >> 2; 
-    CCP1CONbits.CCP1X = (reg_value & 0b00000001);
-    CCP1CONbits.CCP1Y = (reg_value & 0b00000010);
-}
 
+}
 
 void main(void) {
     __set_pwm_freq(1000); // Configura la frecuencia a 1KHz
