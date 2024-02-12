@@ -52,5 +52,6 @@ Modulo 2.
  - 6_3 -> PWM
  - 6_4 -> PWM a una frecuencia determinada.
  - 6_5 -> PWM + TIMER0.
+ - 6_6 -> ADC.
 
  
