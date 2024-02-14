@@ -54,5 +54,7 @@ Modulo 2.
  - 6_5 -> PWM + TIMER0.
  - 6_6 -> ADC.
  - 6_7 -> I2C.
+ - 6_8 -> Master_I2C.
+ - 6_9 -> Slave_I2C
 
  
