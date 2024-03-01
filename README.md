@@ -56,5 +56,7 @@ Modulo 2.
  - 6_7 -> I2C.
  - 6_8 -> Master_I2C.
  - 6_9 -> Slave_I2C
+ - 6.10 -> EEPROM - GPIO
+ - 
 
  
